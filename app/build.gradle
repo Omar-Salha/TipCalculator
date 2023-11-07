@@ -5,16 +5,20 @@ plugins {
 
 android {
     namespace 'com.example.tippy'
-    compileSdk 32
+    compileSdk 34
 
     defaultConfig {
         applicationId "com.example.tippy"
         minSdk 22
-        targetSdk 32
+        targetSdk 34
         versionCode 1
         versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildFeatures {
+        viewBinding true
     }
 
     buildTypes {
